@@ -79,7 +79,7 @@ for filename in files:
     f.write(contents)
     f.close()
 
-f = open("errs.txt", "w")
+f = open("errs.txt", "w", encoding="utf8")
 
 f.write(f"-- Errors ({len(errors)}) --\n" + "\n".join(errors))
 f.close()
