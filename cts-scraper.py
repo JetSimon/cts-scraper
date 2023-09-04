@@ -62,12 +62,11 @@ for filename in files:
             contents = contents.replace(url, seen[url])
             continue
 
-        seen[url] = output_path + fname
-
         print(f"Trying to download from [{url}] as [{fname}]")
         try:
             opener.retrieve(url, "output/" + fname)
             contents = contents.replace(url, output_path + fname)
+            seen[url] = output_path + fname
         except Exception as e:
             err = f"Error downloading url [{url}] for mod [{filename}]: {e}"
             print(err)
