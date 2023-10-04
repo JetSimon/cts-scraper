@@ -13,8 +13,10 @@ Things to modify:
 
 Right now the path for URLs is set to 
 
+```
 output_folder = "mod_media"
 output_path = f"../../../../../static/{output_folder}/"
+```
 
 This is because on CTS I have it so image files are stored in the static/mod_media folder. Switch those as you need. 
 
