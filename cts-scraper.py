@@ -9,7 +9,7 @@ regex = "(http|ftp|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\
 input_folder = "input"
 
 output_folder = "output"
-output_path = f"https://jetsimon.com/cts-media/public/"
+output_path = f"YOUROUTPUTURLHEREENDINGWITH/" # ex: example.com/modfiles/
 
 errors = []
 
