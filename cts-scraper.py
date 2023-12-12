@@ -59,7 +59,7 @@ for filename in tqdm(files):
             #print("Will not download [" + url + "] because forbidden extension " + ext)
             continue
             
-        fname = filename.replace(".html", "") + "_" + str(index) + ext
+        fname = filename.replace(".html", "").replace(" ", "") + "_" + str(index) + ext
 
         if url in seen:
             #print(f"Already saw url [{url}] so skipping download and replacing with [{seen[url]}]")
